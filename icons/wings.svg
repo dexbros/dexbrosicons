@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 154.2 113.9" style="enable-background:new 0 0 154.2 113.9;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#030819;}
-	.st1{fill:#93F2FF;}
-	.st2{fill:#0DC9F7;}
-</style>
-<title>wings</title>
-<polyline class="st0" points="83.8,85.4 112.7,73 83.8,25.3 10.7,21.6 66.4,36.3 81.2,87.2 112.7,73 "/>
-<polygon class="st1" points="17.5,113.9 143.3,17.7 154.2,41.6 139.9,37.7 139.4,62.5 "/>
-<polygon class="st2" points="129.5,66.7 92.9,4.7 0,0 70.8,18.7 90,83.2 "/>
-</svg>
+<svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M16.895 17.299L8.27 23.993 22 18.118l.796-.338-.001-.003 1.285-.55.065-3.264 1.855.513-1.414-3.146-3.818 2.963-2.719-4.674L6 9l9.183 2.461.233.795-8.028-.413 7.224 1.935 1.247 4.325zM16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16z"/><g fill-rule="nonzero"><path d="M16.895 17.299l-1.036.804-1.247-4.325-7.224-1.935 8.028.413z" fill-opacity=".7"/><path d="M16.895 17.299l.778 2.652L22 18.118 8.27 23.993zm3.873-3.006l3.818-2.963L26 14.476l-1.855-.513-.065 3.264-1.285.55z" fill-opacity=".3"/></g></g></svg>

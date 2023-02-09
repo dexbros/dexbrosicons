@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<polygon style="fill:#19419A;" points="376.362,322.521 376.362,37.358 497,107.429 497,392.047 "/>
-<polygon style="fill:#3DA8E4;" points="376.362,322.521 2.891,107.429 128.585,37.358 376.362,179.306 "/>
-<polygon style="fill:#2853C3;" points="376.362,37.358 376.362,179.306 251.256,108.332 "/>
-<polygon style="fill:#61BEFF;" points="2.891,107.429 2.891,388.436 127.863,461.396 127.863,179.306 "/>
-<polygon style="fill:#2754C3;" points="127.863,179.306 497,392.047 376.362,461.396 127.863,320.351 "/>
-<polygon style="fill:#3DA8E4;" points="127.863,320.351 251.256,390.387 127.863,461.396 "/>
-</svg>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M5 10.16l5.485 3.147v.012l10.923 6.31v-6.313L15.94 10.16l5.467 3.157-10.732-6.19h.009a.42.42 0 00-.42 0L5 10.158zm5.485 3.167v6.319l10.711 6.18a.44.44 0 00.42 0l5.265-3.034-2.993-1.73-2.48-1.427v-.006.006l-10.923-6.308zm13.403 7.735l3.004 1.73V10.403a.42.42 0 00-.22-.367L21.408 7v12.63l2.48 1.432zM16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zM5 10.16v12.387a.42.42 0 00.22.368l5.265 3.036v-6.305l-.02-.011v-6.32l.02.012v-.008l-.02-.012v.008L5 10.16z"/></svg>
