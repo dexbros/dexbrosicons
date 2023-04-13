@@ -1,99 +1,11 @@
-
-<style>
-<?php include("style.css");?>
-</style>
-
-<div class="ccParent">
-
-<h1>DexBros Icons</h1>
-<div class="ycopied"></div>
-<h3>Installation</h3>
-<h6>NPM</h6>
-<input type="text" class="npms yarn" id="npm install --save https://github.com/jayboro100/dexbrosicons.git" value="
-npm install --save https://github.com/jayboro100/dexbrosicons.git">
-
-<h6>YARN</h6>
-<input type="text" class="npms yarn" id="yarn add dexbrosicons@https://github.com/jayboro100/dexbrosicons.git" value="yarn add dexbrosicons@https://github.com/jayboro100/dexbrosicons.git">
-
-
-<h1>Usage</h1>
-<div class="usagedex">
-import 'dexbrosicons/style.css';</br></br>
-&lt;span class="icon icon-btc">&lt;/span>
-</div>
-
-
-</div>
-
-
-<h1>Available Icons</h1>
-<?php
-$entries = [];
-$d = dir("icons"); // dir to scan
-while (false !== ($entry = $d->read())) { // mind the strict bool check!
-    if ($entry[0] == '.') continue; // ignore anything starting with a dot
-    $entries[] = $entry;
-}
-$d->close();
-sort($entries); // or whatever desired
-
-$i=0;
-echo '<ul class="listwrapper">';
-foreach($entries as $name){
-	$str = str_replace(".svg", "", $name);
-	echo '<li class="thislist" id="'.$str.'"><span class="cpclip"></span><span class="icon icon-'.$str.'"></span><h4>'.$str.'</h4></li>'; echo '</br>';
-}
-echo '</ul>';
-?>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-<script>
-jQuery('body').on('click', ' ul.listwrapper li', function(){
-	var copyText = jQuery(this).attr("id");
-	$("ul.listwrapper li").css("background-color", "");
-	$("ul.listwrapper li").find('span.cpclip').html("");
-	navigator.clipboard.writeText(copyText).then(() => {
-        // Alert the user that the action took place.
-        // Nobody likes hidden stuff being done under the hood!
-        //alert("Copied to clipboard");
-		$(this).find('span.cpclip').html("<span class='icon icon-interest'></span> Copied!");
-		$(this).css("background", "#efe8e8");
-    });
-	
-})
-
-
-
-
-jQuery("body").on('click','input[type=text]',function(){ 
-$("ul.listwrapper li").find('span.cpclip').html("");
-$("ul.listwrapper li").css("background-color", "");
-var selected = $(this).attr("id");
-navigator.clipboard.writeText(selected).then(() => {
-		$(".ycopied").html("<span class='icon icon-interest'></span> Copied!").delay(3000).fadeOut(300);
-		$(this).select();
-		
-    });
-
-
-});
-
-</script>
-
-
-
-
-
-
-
-
 <style>
 h6 {
     line-height: 0;
     padding: 0;
     margin: 24px 10px 0px 10px;
+}
+h4{
+	font-size:14px;
 }
 .ycopied {
     background: #d9ffd0;
@@ -135,21 +47,107 @@ ul.listwrapper li:hover {
     cursor: pointer;
 }
 ul.listwrapper {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+    -webkit-column-count: 12;
+    -moz-column-count: 12;
+    column-count: 12;
     margin:0;
     padding:0;
     line-height:0px;
 }
 ul.listwrapper li {
-    width:90%;
+    width: 95%;
     display:inline-block;
     border:1px solid  #cacaca;
-    margin:10px;
-    padding:5px 1px;
+    margin: 5px 0px;
+    padding: 5px 1px;
     text-align:center;
-    height:50px;
-    border-radius:19px;
+    height: 44px;
+    border-radius: 5px;
 }
 </style>
+
+<style>
+<?php include("style.css");?>
+</style>
+
+<div class="ccParent">
+
+<h1>DexBros Icons</h1>
+<div class="ycopied"></div>
+<h3>Installation</h3>
+
+<span class="icon icon-cream"></span>
+
+<h6>NPM</h6>
+<input type="text" class="npms yarn" id="npm install --save https://github.com/jayboro100/dexbrosicons.git" value="
+npm install --save https://github.com/jayboro100/dexbrosicons.git">
+
+<h6>YARN</h6>
+<input type="text" class="npms yarn" id="yarn add dexbrosicons@https://github.com/jayboro100/dexbrosicons.git" value="yarn add dexbrosicons@https://github.com/jayboro100/dexbrosicons.git">
+
+
+<h1>Usage</h1>
+<div class="usagedex">
+import 'dexbrosicons/style.css';</br></br>
+&lt;span class="icon icon-btc">&lt;/span>
+</div>
+
+
+</div>
+
+
+<h1>Available Icons</h1>
+<?php
+$entries = [];
+$d = dir("icons"); // dir to scan
+while (false !== ($entry = $d->read())) { // mind the strict bool check!
+    if ($entry[0] == '.') continue; // ignore anything starting with a dot
+    $entries[] = $entry;
+}
+$d->close();
+sort($entries); // or whatever desired
+
+$i=0;
+echo '<ul class="listwrapper">';
+foreach($entries as $name){
+	$str = str_replace(".svg", "", $name);
+	echo '<li class="thislist" id="'.$str.'"><span class="cpclip"></span><span class="icon icon-'.$str.'"><span class="path1"></span><span class="path2"></span></span><h4>'.$str.'</h4></li>'; echo '</br>';
+}
+echo '</ul>';
+?>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+jQuery('body').on('click', ' ul.listwrapper li', function(){
+	var copyText = jQuery(this).attr("id");
+	$("ul.listwrapper li").css("background-color", "");
+	$("ul.listwrapper li").find('span.cpclip').html("");
+	navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        //alert("Copied to clipboard");
+		$(this).find('span.cpclip').html("<span class='icon icon-interest'></span> Copied!");
+		$(this).css("background", "#efe8e8");
+    });
+	
+})
+
+
+
+
+jQuery("body").on('click','input[type=text]',function(){ 
+$("ul.listwrapper li").find('span.cpclip').html("");
+$("ul.listwrapper li").css("background-color", "");
+var selected = $(this).attr("id");
+navigator.clipboard.writeText(selected).then(() => {
+		$(".ycopied").html("<span class='icon icon-interest'></span> Copied!").delay(3000).fadeOut(300);
+		$(this).select();
+		
+    });
+
+
+});
+
+</script>
